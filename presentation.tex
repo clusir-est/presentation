@@ -1,0 +1,48 @@
+%\documentclass[t,french]{beamer} t is for top
+\documentclass[c,french]{beamer} % c is for center
+
+    \usepackage {latex/jmoBeamer}
+
+\title{Clusir-Est}
+\subtitle{Présentation de l'association}
+\author{Johan Moreau}
+%\institute{Elsass JUG}
+\date{9 octobre 2014}
+\hypersetup{
+pdftitle={Clusir-Est}
+pdfauthor={Johan Moreau}
+pdfsubject={}
+pdfkeywords={Clusir-Est,SSI}
+}
+\raggedbottom
+
+\AtBeginSection[]{
+  \begin{frame}{Plan}
+  \small \tableofcontents[currentsection, hidesubsections]
+  \end{frame}
+}
+
+\begin {document}
+\color{ircad}
+%\setbeamercolor{background canvas}{bg=lightergray}
+\setbeamercolor*{item}{fg=darkred}
+\setbeamercolor*{item}{bg=darkred}
+%\newcommand{\itemcol}{\color{darkred}\item}
+%%\maketitle
+%
+%__________________________________________________________________________
+{
+\backgroundfromweb{15480707785}{tmp/europeancouncil.png}{}
+
+\begin{frame}
+    \begin{center}
+    \vspace{0.5cm}
+    \includegraphics[width=4cm]{media/pictures/logoclusirest1.png}
+    \vspace{6cm}
+    \end{center}
+\end{frame}
+}
+%__________________________________________________________________________
+\include{clusir/slides}
+%__________________________________________________________________________
+\end{document}
